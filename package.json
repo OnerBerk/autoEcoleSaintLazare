@@ -1,0 +1,25 @@
+{
+  "name": "autoEcoleSaintLazare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnerBerk/autoEcoleSaintLazare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnerBerk/autoEcoleSaintLazare/issues"
+  },
+  "homepage": "https://github.com/OnerBerk/autoEcoleSaintLazare#readme",
+  "dependencies": {
+    "next": "^10.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
