@@ -18,8 +18,17 @@
   },
   "homepage": "https://github.com/OnerBerk/autoEcoleSaintLazare#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "dotenv": "^8.2.0",
+    "hamburger-react": "^2.3.0",
     "next": "^10.0.2",
+    "nprogress": "^0.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-map-gl": "^5.2.10",
+    "sass": "^1.29.0",
+    "typewriter-effect": "^2.15.0"
   }
 }

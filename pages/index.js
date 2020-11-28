@@ -1,8 +1,8 @@
-const Index = () =>{
-    return(
-    <div>
-        Auto Ecole Saint Lazare 
-    </div>)
-}
+import Layout from "../components/Layout"
+
+const Index = () =>(
+    <Layout title="Auto Ecole Saint Lazare ">
+    </Layout>
+)
 
 export default Index
