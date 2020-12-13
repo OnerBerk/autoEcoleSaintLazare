@@ -1,10 +1,12 @@
 
 import Layout from "../components/Layout"
-import styles from "./pages.module.scss"
+import styles from "./pages.module.scss"    
 
 const About = () =>(
     <Layout title="A propos">
-        <img src="" alt="" />
+            <img
+            className={styles.image}
+            src="/static/saintlazare_resultat.webp" />
     </Layout>
 )
     export default About

@@ -13,13 +13,13 @@ const HamburgerMenu =()=>{
             rounded duration={0.8} 
             toggled={open} 
             toggle={setOpen} 
-            color="black" 
+            color="snow"
             aria-label="hamburger-Menu"
         />
         {open &&
         <div>
             <ul className={styles.ham} >
-            <li><Link href="/" onClick={close}><a> Acceuil </a></Link></li>
+            <li><Link href="/" onClick={close}><a> Acceuil </a></Link></li><li><Link href="/forfait"><a> Nos Forfaits </a></Link></li>
             <li><Link href="/about" onClick={close}><a> A propos </a></Link></li>
             <li><Link href="/contact" onClick={close}><a> Contact </a></Link></li>
             </ul>

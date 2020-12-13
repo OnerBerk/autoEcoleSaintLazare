@@ -6,19 +6,25 @@ $minimize-screen: 800px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  margin-top: 3.5em;
+}
+.rootLayout h1{
+  color: snow;
 }
 .rootLayout header{
-    font-family: 'Playfair Display', 'Abril Fatface', cursive;
-    text-align: right;
-    width: 95%;
-    padding: 1.5em;
-    padding-right: 2em;
-    background-color: rgba(83, 82, 82, 0.377);
-    border-radius: 15px;
+  font-family: 'Playfair Display', 'Abril Fatface', cursive;
+  text-align: right;
+  width: 98%;
+  padding: 1em;
+  padding-right: 2em;
+  background-color: rgb(25,25,25);
+  border-bottom: snow 1px solid;
+  position: fixed;
+  top: 0;
 }
 .rootLayout header a{
     text-decoration: none;
-    color: #000;
+    color: snow;
     font-size: 1.4em;
     padding-left: 0.2em;
 
@@ -52,23 +58,23 @@ $minimize-screen: 800px;
 }
 
 .rootLayout header a:hover{
-    color: snow;
     font-weight: bold;
     font-size: 1.5em;
 }
 .rootLayout footer{
     padding: 1em;
+  color: snow;
 }
 .hamburger{
     visibility: hidden;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 5px;
+    right: 15px;
 }
 .ham{
     flex-flow: column nowrap;
     font-family: 'Playfair Display', 'Abril Fatface', cursive;
-    background-color: rgba(73, 21, 19, 0.733);
+    background-color: rgba(25,25,25, 0.9);
     border-radius: 15px;
     position: fixed;
     margin-left: 1em;
@@ -120,10 +126,11 @@ $minimize-screen: 800px;
 .ham a:hover{
     font-weight: bold;
     font-size: 3.1em;
+  z-index: 500;
 }
 @media (max-width: $minimize-screen ) {
-    .rootLayout header{
-        visibility: hidden;
+    .rootLayout header a{
+      visibility: hidden;
     }
     .hamburger{
         visibility: visible;
@@ -131,8 +138,10 @@ $minimize-screen: 800px;
 }
 
 .car{
-    position: absolute;
-    top: 1.35em;
+    position: fixed;
+    top:0.8em;
     left: 0.7em;
     font-size: 1.55em;
+    color: snow;
+    z-index: 2;
 }

@@ -1,6 +1,7 @@
 .map{
   border: 5px double rgb(150, 34, 30);
-  border-radius:10px
+  border-radius:10px;
+  z-index: -1;
 }
 .marker{
   border-radius: 50% 50% 50% 0;
@@ -28,7 +29,6 @@
   background:snow;
   border-radius: 50%;
   margin-left: 3.4px;
-  z-index: -1;
 }
 .pulse:before{
   content: '';
@@ -42,6 +42,7 @@
   border:2px solid rgba(158, 32, 32, 0.5);
   z-index:  -2;
   animation: animate 1s linear infinite;
+
 }
 
 @keyframes animate{

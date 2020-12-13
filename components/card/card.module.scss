@@ -1,0 +1,19 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  border: #92bdf1 1px solid;
+  text-align: center;
+  color: snow;
+  padding: 0.5em;
+}
+.card p{
+  text-align: center;
+  margin-bottom: -0.5em;
+}
+
+.button{
+margin-top: 1.8em;
+}
+.button:hover{
+  color: #92bdf1;
+}

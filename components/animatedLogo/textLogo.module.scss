@@ -1,9 +1,11 @@
 .typewriter{
     position: absolute;
-    left: 2em;
-    top:0.3em;
+    left: 3em;
+    top: -0.3em;
+    z-index: 2;
+    position: fixed;
 
-    background-image: linear-gradient(to left, rgb(187, 47, 187), rgb(32, 0, 54), rgb(36, 110, 36), rgb(74, 74, 156), rgb(187, 104, 10), rgb(206, 117, 117), rgb(161, 21, 21));
+    background-image: linear-gradient(to left, rgb(243, 232, 243), rgb(231, 103, 129), rgb(146, 245, 146), rgb(147, 185, 233), rgb(92, 54, 8), rgb(92, 30, 30), rgb(13, 93, 117));
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;

@@ -11,15 +11,15 @@ const Contact =()=>(
             <a>4 Place Saint-Lazare,</a>
             <a> 84000 Avignon</a>
           </p>
-        <p> Vous pouvez nous contacter par mail 
-          <a href="mailto:mahir@gmail.com" > <span className={styles.mail}>ICI</span> </a> 
-        </p>
+          <p> <a>Vous pouvez nous contacter par mail</a> </p>
+          <a href="mailto:mahir@gmail.com" > <span className={styles.mail}>ICI</span> </a>
+
           <p>
             <a> Ou par Telephone : 09.82.39.54.63 </a>
           </p>
         
       </div>
-      <MapDisplayer/>
+      <MapDisplayer />
     </Layout>
 )
 

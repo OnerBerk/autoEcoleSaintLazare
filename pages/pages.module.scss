@@ -1,14 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-.contactContainer p a{
+
+.contactContainer a{
     display: flex;
     justify-content: center;
+    color: snow;
 }
 .mail{
-    color: black;
+    color: snow;
     font-family: 'Playfair Display', 'Abril Fatface', cursive;
     font-size: 1.2em;;
 }
 .mail:hover{
-    color:black;
-    font-size: 1.3em;;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.image{
+    width: 35%;
+    border: double black 3px;
+    opacity: 85%;
+    z-index: -1;
+}
+.carImage{
+    width: 95%;
+    border-radius: 15px;
+}
+.textAccueil{
+    width: 87%;
+    margin-top:1.5em;
+    text-align: justify;
+    border-radius: 15px;
+    padding-right: 2em;
+    padding-left: 2em;
+    background-color: rgba(73, 21, 19, 0.933);
+    transition:all .5s ease;
+    box-shadow: 20px 38px 34px -26px hsla(0, 14%, 96%, 0.2);
+    color: snow;
+}
+.textAccueil p{
+    font-size: larger;
+}
+
+.textAccueil:hover{
+     box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+
+.textAccueil h1{
+    display: flex;
+    justify-content: center;
+}
+
+.liens{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.liens a{
+    text-decoration: none;
+    color: snow;
+    font-size: 1.5em;
+}
+.liens a:hover{
+    text-decoration: underline;
+    font-size: 1.7em;
+    font-weight: bold;
+
+}
+.containerCard{
+    width: 95%;
+    height: 90vh;
+    display: grid;
+    margin-top: 3em;
+    grid-gap: 0.5em;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 45% 55%;
+    justify-content: center;
+    padding: 0.5em ;
+}
+.content{
+    border: sandybrown solid 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    margin-bottom: 0.5em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
 }

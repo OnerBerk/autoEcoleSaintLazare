@@ -13,7 +13,6 @@ class Map extends Component {
     }
   };
   render() {
-    console.log( process.env.googleapikey)
     return (
       <ReactMapGL
         className={styles.map}

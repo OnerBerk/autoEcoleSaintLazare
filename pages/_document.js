@@ -29,14 +29,6 @@ export default  class MyDocument extends Document {
             <body>
                 <Main />
                 <NextScript/>
-                <style jsx global>{`
-                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-                body {
-                    font-family: 'Playfair Display','Indie Flower', 'Abril Fatface', cursive;
-                    background-image: url("../static/white.jpg");
-                }
-                `}
-                </style>
 
             </body>
 
