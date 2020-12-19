@@ -1,34 +1,80 @@
-
-import React, {useEffect, useState} from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import Card from "../components/card/card"
 import ForContent from "../components/forContent/forContent"
+import ForContent1 from "../components/forContent/forContent1"
+import ForContent2 from "../components/forContent/forContent2"
+import ForContent3 from "../components/forContent/forContent3"
 
 import styles from "./pages.module.scss"
 
 const Forfait = (props) => {
     const [visible, setVisible] = useState(false)
+    const [visible1, setVisible1] = useState(false)
+    const [visible2, setVisible2] = useState(false)
+    const [visible3, setVisible3] = useState(false)
+
+    const setAllFalse = () => {
+        setVisible(false);
+        setVisible1(false);
+        setVisible2(false);
+        setVisible3(false)
+    }
+
+
     return (
         <Layout title="Nos Forfaits">
             <div className={styles.containerCard}>
                 <Card
                     title="Forfait intensif "
-                    content="Cours de Code"
-                    content1="20h de conduite"
-                    backgroundImage="../static/car2.png"
-                    /*onClick={()=>{
-                        setVisible(!visible)
-                        console.log(visible)
-                    }}*/
+                    content="850 €"
+                    content1="21h"
+                    backgroundImage="../static/intensif.png"
                 />
-                <Card title="berk"/>
-                <Card title="le"/>
-                <Card title="meilleur"/>
+                <Card
+                    title="Forfait relax "
+                    content="1190 €"
+                    content1="31h"
+                    backgroundImage="../static/car.png"
+                />
+                <Card
+                    title="Forfait Code "
+                    content="290 €"
+                    content1="Cours de Code"
+                    backgroundImage="../static/learn.png"
+                />
+                <Card
+                    title="Accompagné "
+                    content="1090 €"
+                    content1="21h"
+                    backgroundImage="../static/accompagne.png"
+                />
+
+                <p className={styles.info} onClick={() => {
+                    setAllFalse();
+                    setVisible(!visible)
+                }}>  <span>Details</span> </p>
+                <p className={styles.info} onClick={() => {
+                    setAllFalse();
+                    setVisible1(!visible1)
+                }}> <span>Details</span> </p>
+                <p className={styles.info} onClick={() => {
+                    setAllFalse();
+                    setVisible2(!visible2)
+                }}> <span>Details</span> </p>
+                <p className={styles.info} onClick={() => {
+                    setAllFalse();
+                    setVisible3(!visible3)
+                }}> <span>Details</span> </p>
 
                 <div className={styles.content}>
-                    <ForContent content="lorem ipsumum jjsjnjs"/>
+                    {visible && <ForContent/>}
+                    {visible1 && <ForContent1/>}
+                    {visible2 && <ForContent2/>}
+                    {visible3 && <ForContent3/>}
                 </div>
             </div>
         </Layout>
-    )}
+    )
+}
 export default Forfait

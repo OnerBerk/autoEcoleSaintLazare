@@ -1,11 +1,11 @@
 import React from "react"
 import styles from "./forContent.module.scss";
 
-const ForContent = () => {
+const ForContent3 = () => {
     return (
-        <div className={styles.content}>
-            <h1> Forfait 21 h </h1>
-            <div className={styles.forcont}>
+        <div className={styles.content3}>
+                       <h1> Forfait Accompagné</h1>
+            <div className={styles.forcont3}>
                 <h2> <span>Le forfait comprend </span></h2>
                 <p>
                     <a> Frais de démarches administratives</a><br/>
@@ -13,8 +13,8 @@ const ForContent = () => {
                     <a>20 heures de conduite *</a><br/>
                     <a>1 heures d'evaluation</a><br/>
                     <a>Kit Pédagogique</a><br/>
-                    <a>Code en ligne</a><br/>
-                    <a>Accompagnement à l’examen de conduite</a><br/>
+                    <a> 1 er rdv pédagogique 1000km</a><br/>
+                    <a>2 eme rdv pédagogique 2000km</a><br/>
                 </p>
                 <h2><span>Les pièces à fournir </span> </h2>
                 <p>
@@ -33,5 +33,4 @@ const ForContent = () => {
         </div>
     )
 }
-
-export default ForContent
+export default ForContent3

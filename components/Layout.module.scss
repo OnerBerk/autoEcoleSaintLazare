@@ -1,147 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-$minimize-screen: 800px;
 
-.rootLayout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+$minimize-screen: 800px;
+$phone-screen: 600px;
+
+.rootLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 3.5em;
+  min-height: 100vh;
 }
-.rootLayout h1{
+
+.rootLayout h1 {
   color: snow;
 }
-.rootLayout header{
+
+.rootLayout header {
   font-family: 'Playfair Display', 'Abril Fatface', cursive;
   text-align: right;
   width: 98%;
   padding: 1em;
   padding-right: 2em;
-  background-color: rgb(25,25,25);
+  background-color: rgb(25, 25, 25);
   border-bottom: snow 1px solid;
   position: fixed;
   top: 0;
 }
-.rootLayout header a{
-    text-decoration: none;
-    color: snow;
-    font-size: 1.4em;
-    padding-left: 0.2em;
 
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow: hidden;
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 50%;
-      right: 50%;
-      bottom: 0;
-      background: snow;
-      height: 1.5px;
-      -webkit-transition-property: left right;
-      transition-property: left right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.6s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-}
-.rootLayout header a:hover::before{
-    left: 0;
-    right: 0;
+.rootLayout header a {
+  text-decoration: none;
+  color: snow;
+  font-size: 1.4em;
+  padding-left: 0.2em;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: snow;
+    height: 1.5px;
+    -webkit-transition-property: left right;
+    transition-property: left right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.6s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
 }
 
-.rootLayout header a:hover{
-    font-weight: bold;
-    font-size: 1.5em;
+.rootLayout header a:hover::before {
+  left: 0;
+  right: 0;
 }
-.rootLayout footer{
-    padding: 1em;
+
+.rootLayout header a:hover {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.rootLayout footer {
+  margin-top: 27em;
   color: snow;
 }
-.hamburger{
-    visibility: hidden;
-    position: fixed;
-    top: 5px;
-    right: 15px;
-}
-.ham{
-    flex-flow: column nowrap;
-    font-family: 'Playfair Display', 'Abril Fatface', cursive;
-    background-color: rgba(25,25,25, 0.9);
-    border-radius: 15px;
-    position: fixed;
-    margin-left: 1em;
-    margin-right: 0.5em;
-    top: 68px;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    padding: auto;
-    padding-top: 3em;
-    list-style: none;    
-    text-align: right;
-}
-.ham a{
-    list-style: none;
-    text-decoration: none;    
-    font-size: 3em;
-    color: snow;
-    margin-right: 2em;
 
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow: hidden;
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 50%;
-      right: 50%;
-      bottom: 0;
-      background: snow;
-      height: 2.5px;
-      -webkit-transition-property: left right;
-      transition-property: left right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.6s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+.hamburger {
+  visibility: hidden;
+  position: fixed;
+  top: 5px;
+  right: 15px;
 }
+
+.ham {
+  flex-flow: column nowrap;
+  font-family: 'Playfair Display', 'Abril Fatface', cursive;
+  background-color: rgba(25, 25, 25, 0.9);
+  border-radius: 15px;
+  position: fixed;
+  margin-left: 1em;
+  margin-right: 0.5em;
+  top: 68px;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  padding: auto;
+  padding-top: 3em;
+  list-style: none;
+  text-align: right;
 }
-.ham a:hover::before{
-    left: 0;
-    right: 0;
+
+.ham a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 3em;
+  color: snow;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: snow;
+    height: 2.5px;
+    -webkit-transition-property: left right;
+    transition-property: left right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.6s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
 }
-.ham a:hover{
-    font-weight: bold;
-    font-size: 3.1em;
+.ham a:hover::before {
+  left: 0;
+  right: 0;
+}
+.ham a:hover {
+  font-weight: bold;
+  font-size: 3.1em;
   z-index: 500;
 }
-@media (max-width: $minimize-screen ) {
-    .rootLayout header a{
-      visibility: hidden;
-    }
-    .hamburger{
-        visibility: visible;
-    }
+.car {
+  position: fixed;
+  top: 0.8em;
+  left: 0.7em;
+  font-size: 1.55em;
+  color: snow;
+  z-index: 2;
+}
+@media (max-width: $minimize-screen) {
+  .rootLayout header a {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+}
+@media (max-width: $phone-screen) {
+  .rootLayout header{height: 2.2em;}
+  .car{ font-size: 1.5em }
+  .hamburger{top: 10px  }
+  .rootLayout footer { margin-top: 55em;}
 }
 
-.car{
-    position: fixed;
-    top:0.8em;
-    left: 0.7em;
-    font-size: 1.55em;
-    color: snow;
-    z-index: 2;
-}

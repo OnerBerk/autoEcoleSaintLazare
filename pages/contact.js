@@ -12,10 +12,16 @@ const Contact =()=>(
             <a> 84000 Avignon</a>
           </p>
           <p> <a>Vous pouvez nous contacter par mail</a> </p>
-          <a href="mailto:mahir@gmail.com" > <span className={styles.mail}>ICI</span> </a>
+          <a href="mailto:sl.auto.ecole@gmail.com" >
+             
+               <img 
+               className={styles.mail}
+               src="/static/mail.png" />
+
+          </a>
 
           <p>
-            <a> Ou par Telephone : 09.82.39.54.63 </a>
+            <a> Ou par Telephone : 06.58.24.34.34 </a>
           </p>
         
       </div>

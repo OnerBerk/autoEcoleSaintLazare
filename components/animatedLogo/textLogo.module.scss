@@ -1,3 +1,5 @@
+$minimize-screen: 600px;
+
 .typewriter{
     position: absolute;
     left: 3em;
@@ -10,4 +12,12 @@
         -moz-background-clip: text;
         background-clip: text;
         color: transparent;
+}
+
+@media (max-width: $minimize-screen) {
+    .typewriter{
+        font-size: 1em;
+        top: 0.6em;
+        left: 4em;
+    }
 }

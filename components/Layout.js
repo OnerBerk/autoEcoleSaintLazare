@@ -37,7 +37,7 @@ const Layout=({children, title })=>(
             <h1> {title} </h1>
             {children}
         <footer> 
-            &copy; Auto école Saint-Lazare  {new Date().getFullYear()}<br/>
+            &copy; Auto école Saint-Lazare X OnAir  {new Date().getFullYear()}<br/>
         </footer>
     </div>
 )

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+$minimize-screen: 800px;
+$phone-screen: 600px;
 
 .contactContainer a{
     display: flex;
@@ -6,18 +8,15 @@
     color: snow;
 }
 .mail{
-    color: snow;
-    font-family: 'Playfair Display', 'Abril Fatface', cursive;
-    font-size: 1.2em;;
+    width: 4%;
 }
 .mail:hover{
-    font-size: 1.3em;
-    font-weight: bold;
+    width: 5%;
 }
 
 .image{
-    width: 35%;
-    border: double black 3px;
+    width: 45%;
+    border: double snow 3px;
     opacity: 85%;
     z-index: -1;
 }
@@ -32,7 +31,7 @@
     border-radius: 15px;
     padding-right: 2em;
     padding-left: 2em;
-    background-color: rgba(73, 21, 19, 0.933);
+    background-color: rgba(73, 21, 19, 0.93);
     transition:all .5s ease;
     box-shadow: 20px 38px 34px -26px hsla(0, 14%, 96%, 0.2);
     color: snow;
@@ -73,18 +72,52 @@
     margin-top: 3em;
     grid-gap: 0.5em;
     grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 45% 55%;
+    grid-template-rows: 40% 5% ;
     justify-content: center;
     padding: 0.5em ;
 }
 .content{
-    border: sandybrown solid 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: snow;
-    margin-bottom: 0.5em;
+    height: auto;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 2;
+    grid-row-start: 3;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+}
+.info span{
+    text-align: center;
+    width: 50%;
+    background-color: rgba(43, 116, 199, 0.267);
+    border-radius: 15px;
+    padding: 0.3em;
+}
+.info:hover{
+    color: #92bdf1;
+    font-size: 1.1em;
+   
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: snow;
+}
+.about h2{
+    border-bottom: 2px double snow;
+}
+@media (max-width: $phone-screen) {
+
+    .info{margin-top: -5em;}
+    .content{margin-top: -3em;}
+    .image{ width: 85%;}
 }

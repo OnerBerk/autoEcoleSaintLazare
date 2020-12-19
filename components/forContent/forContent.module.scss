@@ -1,0 +1,61 @@
+.content{background-color: rgba(84, 123, 184,0.5);}
+.content1{background-color: rgba(243, 34, 34, 0.5);}
+.content2{background-color: #469e6b80;}
+.content3{background-color: #cfb45c83;}
+
+.forcont{
+  width: 65%;
+  text-align: justify-all;
+}
+.forcont h2 span, .forcont1 h2 span, .forcont2 h2 span, .forcont3 h2 span{
+  width: 40%;
+  border-bottom: 2px solid snow;
+}
+.forcont h2{
+  background: linear-gradient(to right,snow, rgb(143, 192, 211), black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.forcont1 h2{
+  background: linear-gradient(to right,snow, rgb(243, 106, 106), black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.forcont2 h2{
+  background: linear-gradient(to right,snow, rgb(172, 238, 202), black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.forcont3 h2{
+  background: linear-gradient(to right,rgb(247, 244, 244), rgb(253, 236, 189), rgb(105, 101, 101));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.content, .content1, .content2, .content3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3em ;
+  border-radius: 15px;
+}
+
+.content h1, .content1 h1, .content2 h1, .content3 h1{
+  border-bottom: 3px double snow;
+}
+
