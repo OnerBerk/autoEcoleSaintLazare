@@ -44,7 +44,7 @@ const Forfait = (props) => {
                     backgroundImage="../static/learn.png"
                 />
                 <Card
-                    title="Accompagné "
+                    title=" Accompagné "
                     content="1090 €"
                     content1="21h"
                     backgroundImage="../static/accompagne.png"
