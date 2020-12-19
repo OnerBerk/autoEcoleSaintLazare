@@ -1,10 +1,11 @@
 {
-  "name": "autoEcoleSaintLazare",
+  "name": "autoecolesaintlazare",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 4000"
+    "dev": "next -p 4000",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
