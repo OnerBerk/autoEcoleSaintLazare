@@ -28,7 +28,7 @@ const Layout=({children, title })=>(
             <TextLogo/>
             <FontAwesomeIcon className={styles.car} icon={faCar}  />
         <header> 
-            <Link href="/"><a> Acceuil </a></Link>
+            <Link href="/"><a> Accueil </a></Link>
             <Link href="/forfait"><a> Nos Forfaits </a></Link>
             <Link href="/about"><a> A propos </a></Link>
             <Link href="/contact"><a> Contact </a></Link> 
