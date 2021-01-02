@@ -20,8 +20,7 @@ $phone-screen: 600px;
   font-family: 'Playfair Display', 'Abril Fatface', cursive;
   text-align: right;
   width: 98%;
-  padding: 1em;
-  padding-right: 2em;
+  padding: 1em 2em 1em 1em;
   background-color: rgb(25, 25, 25);
   border-bottom: snow 1px solid;
   position: fixed;
@@ -51,8 +50,8 @@ $phone-screen: 600px;
     bottom: 0;
     background: snow;
     height: 1.5px;
-    -webkit-transition-property: left right;
-    transition-property: left right;
+    -webkit-transition-property: left ;
+    transition-property: left;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
@@ -68,11 +67,6 @@ $phone-screen: 600px;
 .rootLayout header a:hover {
   font-weight: bold;
   font-size: 1.5em;
-}
-
-.rootLayout footer {
-  margin-top: 27em;
-  color: snow;
 }
 
 .hamburger {
@@ -94,8 +88,7 @@ $phone-screen: 600px;
   right: 0;
   width: 90%;
   height: 100%;
-  padding: auto;
-  padding-top: 3em;
+  padding: 1em ;
   list-style: none;
   text-align: right;
 }
@@ -123,8 +116,8 @@ $phone-screen: 600px;
     bottom: 0;
     background: snow;
     height: 2.5px;
-    -webkit-transition-property: left right;
-    transition-property: left right;
+    -webkit-transition-property: left;
+    transition-property: left;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
@@ -149,17 +142,15 @@ $phone-screen: 600px;
   z-index: 2;
 }
 @media (max-width: $minimize-screen) {
-  .rootLayout header a {
-    visibility: hidden;
-  }
-  .hamburger {
-    visibility: visible;
-  }
+  .rootLayout header a {visibility: hidden;}
+  .hamburger {visibility: visible;}
 }
 @media (max-width: $phone-screen) {
   .rootLayout header{height: 2.2em;}
   .car{ font-size: 1.5em }
-  .hamburger{top: 10px  }
-  .rootLayout footer { margin-top: 55em;}
+  .hamburger{top: 10px;}
+  .rootLayout h1{font-size: 1.5em;}
+  .ham a{font-size: 2.5em;}
+  .ham a:hover{font-size: 2.5em;}
 }
 

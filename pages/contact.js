@@ -26,6 +26,11 @@ const Contact =()=>(
         
       </div>
       <MapDisplayer />
+      <div >
+          <footer className={styles.footer}>
+              &copy; Auto école Saint-Lazare X OnAir  {new Date().getFullYear()}<br/>
+          </footer>
+      </div>
     </Layout>
 )
 

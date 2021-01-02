@@ -8,7 +8,7 @@ import ForContent3 from "../components/forContent/forContent3"
 
 import styles from "./pages.module.scss"
 
-const Forfait = (props) => {
+const Forfait = () => {
     const [visible, setVisible] = useState(false)
     const [visible1, setVisible1] = useState(false)
     const [visible2, setVisible2] = useState(false)
@@ -24,6 +24,7 @@ const Forfait = (props) => {
 
     return (
         <Layout title="Nos Forfaits">
+            <div className={styles.globalForfait}>
             <div className={styles.containerCard}>
                 <Card
                     title="Forfait intensif "
@@ -73,6 +74,8 @@ const Forfait = (props) => {
                     {visible2 && <ForContent2/>}
                     {visible3 && <ForContent3/>}
                 </div>
+            </div>
+
             </div>
         </Layout>
     )

@@ -3,6 +3,7 @@ import Link from "next/link"
 import {faHandPointRight, faHandPointLeft, faCar} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from "./pages.module.scss"
+import React from "react";
 
 const Index = () =>(
     <Layout title="Auto Ecole Saint Lazare ">
@@ -25,6 +26,11 @@ const Index = () =>(
               ... Nos Forfaits ...
             <FontAwesomeIcon  icon={faHandPointLeft} />
         </a></Link>
+        </div>
+        <div >
+            <footer className={styles.footer}>
+                &copy; Auto école Saint-Lazare X OnAir  {new Date().getFullYear()}<br/>
+            </footer>
         </div>
     </Layout>
 )

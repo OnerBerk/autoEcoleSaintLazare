@@ -18,6 +18,11 @@ const About = () =>(
             <img
             className={styles.image}
             src="/static/saintlazare_resultat.webp" />
+        <div >
+            <footer className={styles.footer}>
+            &copy; Auto école Saint-Lazare X OnAir  {new Date().getFullYear()}<br/>
+        </footer>
+        </div>
     </Layout>
 )
     export default About
